@@ -36,7 +36,22 @@ Output the shellcode as an array of RC4 encrypted shellcode with a given key.
 Output the shellcode as an array of XOR encrypted shellcode with a given key.
 
 ## Arguments:
-<mode>: The mode to determine the output format (as described above).
-<payload_file>: The file containing the payload to be processed.
-[key]: (Optional) The key used for encryption modes (e.g., for RC4 or XOR).
--o <output_file>: (Optional) Specify an output file to save the result.
+
+```bash
+<mode>: 
+```
+The mode to determine the output format (as described above).
+
+```bash
+<payload_file>: 
+```
+The file containing the payload to be processed.
+
+```
+bash[key]: 
+(Optional) The key used for encryption modes (e.g., for RC4 or XOR).
+```
+```bash
+-o <output_file>: 
+```
+(Optional) Specify an output file to save the result.
