@@ -8,31 +8,33 @@ FlexSheller is a versatile tool for generating various types of shellcode in dif
 ```bash
 FlexSheller <mode> <payload_file> [key] [-o <output_file>]
 ```
+![1](https://i.gyazo.com/c75789c7d9a5e2965ba352b05c3998bb.png)
+
 ## Modes:
------------------------------------------------------------------------------------------------------
-### "mac"
+
+#### "mac"
 Output the shellcode as an array of MAC addresses.
 Example: FC-48-83-E4-F0-E8
 
-### "ipv4"
+#### "ipv4"
 Output the shellcode as an array of IPv4 addresses.
 Example: 252.72.131.228
 
-### "ipv6"
+#### "ipv6"
 Output the shellcode as an array of IPv6 addresses.
 Example: FC48:83E4:F0E8:C000:0000:4151:4150:5251
 
-### "uuid"
+#### "uuid"
 Output the shellcode as an array of UUID strings.
 Example: FC4883E4-F0E8-C000-0000-415141505251
 
-### "aes"
+#### "aes"
 Output the shellcode as an array of AES encrypted shellcode with a random key and IV.
 
-### "rc4"
+#### "rc4"
 Output the shellcode as an array of RC4 encrypted shellcode with a given key.
 
-### "xor"
+#### "xor"
 Output the shellcode as an array of XOR encrypted shellcode with a given key.
 
 ## Arguments:
