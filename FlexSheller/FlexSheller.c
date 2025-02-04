@@ -37,16 +37,18 @@ void PrintUsage() {
     printf("#                          Made by @amroes                           #\n");
     printf("#                                                                    #\n");
     printf("######################################################################\n\n");
-    printf("Usage: flexsheller <mode> <payload_file> [key] [-o <output_file>]\n");
+
+    printf("Usage: FlexSheller <mode> <payload_file> [key] [-o <output_file>]\n");
     printf("Modes:\n");
-    printf("\tmac   - Generate MAC Address payload\n");
-    printf("\tipv4  - Generate IPv4 Address payload\n");
-    printf("\tipv6  - Generate IPv6 Address payload\n");
-    printf("\tuuid  - Generate UUID payload\n");
-    printf("\taes   - AES-256 encrypted payload (requires key)\n");
-    printf("\trc4   - RC4 encrypted payload (requires key)\n");
-    printf("\txor   - XOR encrypted payload (requires key)\n");
+    printf("\t1. \"mac\"     ::: Output the shellcode as an array of MAC addresses [FC-48-83-E4-F0-E8]\n");
+    printf("\t2. \"ipv4\"    ::: Output the shellcode as an array of IPv4 addresses [252.72.131.228]\n");
+    printf("\t3. \"ipv6\"    ::: Output the shellcode as an array of IPv6 addresses [FC48:83E4:F0E8:C000:0000:4151:4150:5251]\n");
+    printf("\t4. \"uuid\"    ::: Output the shellcode as an array of UUID strings [FC4883E4-F0E8-C000-0000-415141505251]\n");
+    printf("\t5. \"aes\"     ::: Output the shellcode as an array of AES encrypted shellcode with random key and IV\n");
+    printf("\t6. \"rc4\"     ::: Output the shellcode as an array of RC4 encrypted shellcode with given key\n");
+    printf("\t7. \"xor\"     ::: Output the shellcode as an array of XOR encrypted shellcode with given key\n");
 }
+
 
 VOID PrintHexData(LPCSTR Name, PBYTE Data, SIZE_T Size) {
     printf("unsigned char %s[] = {", Name);
